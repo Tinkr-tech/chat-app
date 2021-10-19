@@ -17,3 +17,8 @@ body {
 #right-pane {
     background-color: aqua;
 }
+
+#messages-container {
+    flex-grow: 1;
+    overflow: auto;
+}
