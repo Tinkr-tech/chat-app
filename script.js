@@ -21,6 +21,12 @@ async function downloadMessages() {
         }
     }
     console.log('members', members)
+
+    let membersHTML = ''
+    for (const name of members) {
+        membersHTML += '<p>' + name + '</p>'
+    }
+    console.log('membersHTML', membersHTML)
 }
 
 downloadMessages()
