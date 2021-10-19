@@ -12,6 +12,7 @@ async function downloadMessages() {
         messageHTML += '</div>'
         messagesContainer.innerHTML += messageHTML
     }
+    messagesContainer.scrollTop = messagesContainer.scrollHeight
 }
 
 downloadMessages()
