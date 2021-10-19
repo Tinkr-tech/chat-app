@@ -33,5 +33,7 @@ messageInput.onkeyup = async function (event) {
         console.log('Enter pressed, send message')
         const userInput = document.querySelector('input#user')
         console.log('userInput.value', userInput.value)
+        const data = { user: userInput.value, message: message }
+        await fetchPOST(SDB_URL, data)
     }
 }
