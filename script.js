@@ -1,5 +1,6 @@
 const SDB_URL = "https://tinkr.tech/sdb/chatapp"
 const messagesContainer = document.querySelector('#messages-container')
+const membersContainer = document.querySelector('#right-pane div')
 
 async function downloadMessages() {
     const messages = await fetchGET(SDB_URL)
@@ -27,6 +28,8 @@ async function downloadMessages() {
         membersHTML += '<p>' + name + '</p>'
     }
     console.log('membersHTML', membersHTML)
+
+    membersContainer.innerHTML = membersHTML
 }
 
 downloadMessages()
