@@ -1,0 +1,8 @@
+.horizontal-split {
+    display: flex;
+    flex-direction: row;
+}
+
+#right-pane {
+    background-color: aqua;
+}
