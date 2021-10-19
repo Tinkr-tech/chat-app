@@ -28,3 +28,13 @@ body {
 #messages-container, #input-container, #right-pane {
     padding: 2rem;
 }
+
+.message .user {
+    font-size: 1rem;
+    opacity: 0.6;
+    margin-bottom: 0;
+}
+
+.message .content {
+    margin-top: 0;
+}
