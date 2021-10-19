@@ -13,6 +13,12 @@ async function downloadMessages() {
         messagesContainer.innerHTML += messageHTML
     }
     messagesContainer.scrollTop = messagesContainer.scrollHeight
+
+    const members = []
+    for (const message of messages) {
+        members.push(message.user)
+    }
+    console.log('members', members)
 }
 
 downloadMessages()
