@@ -7,6 +7,10 @@ async function downloadMessages() {
     console.log('Downloaded message count:', messages.length)
     console.log('First message content:', messages[0])
     console.log('First message user:', messages[0].user)
+
+    for (const message of messages) {
+
+    }
 }
 
 downloadMessages()
