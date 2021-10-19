@@ -35,5 +35,6 @@ messageInput.onkeyup = async function (event) {
         console.log('userInput.value', userInput.value)
         const data = { user: userInput.value, message: message }
         await fetchPOST(SDB_URL, data)
+        downloadMessages()
     }
 }
