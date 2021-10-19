@@ -9,7 +9,7 @@ async function downloadMessages() {
     console.log('First message user:', messages[0].user)
 
     for (const message of messages) {
-
+        let messageHTML = '<div class="message">'
     }
 }
 
