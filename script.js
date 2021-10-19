@@ -1,5 +1,6 @@
 console.log("Program starting")
 const SDB_URL = "https://tinkr.tech/sdb/chatapp"
+const messagesContainer = document.querySelector('#messages-container')
 
 async function downloadMessages() {
     console.log("Downloading messages from server")
@@ -14,6 +15,7 @@ async function downloadMessages() {
         messageHTML += '<p class="content">' + message.message + '</p>'
         messageHTML += '</div>'
         console.log('messageHTML', messageHTML)
+        messagesContainer.innerHTML += messageHTML
     }
 }
 
