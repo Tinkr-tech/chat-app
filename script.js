@@ -31,5 +31,7 @@ messageInput.onkeyup = function (event) {
 
     if (event.key === 'Enter') {
         console.log('Enter pressed, send message')
+        const userInput = document.querySelector('input#user')
+        console.log('userInput.value', userInput.value)
     }
 }
