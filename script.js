@@ -27,4 +27,5 @@ console.log("Selected element with id:", messageInput.id)
 
 messageInput.onkeyup = function (event) {
     console.log('User is typing:', event.target.value)
+    const message = event.target.value
 }
