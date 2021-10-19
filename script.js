@@ -5,6 +5,7 @@ async function downloadMessages() {
     console.log("Downloading messages from server")
     const messages = await fetchGET(SDB_URL)
     console.log('Downloaded message count:', messages.length)
+    console.log('First message content:', messages[0])
 }
 
 downloadMessages()
