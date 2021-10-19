@@ -52,3 +52,7 @@ input {
     margin-top: 0.5rem;
     border-radius: 100rem;
 }
+
+input:focus {
+    outline: none;
+}
