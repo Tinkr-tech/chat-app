@@ -21,3 +21,6 @@ async function downloadMessages() {
 }
 
 downloadMessages()
+
+const messageInput = document.querySelector('input#message')
+console.log("Selected element with id:", messageInput.id)
